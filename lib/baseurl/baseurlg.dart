@@ -1,6 +1,6 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
-var imagebaseUrl1 = 'https://gogrocer.tecmanic.com/';
+var imagebaseUrl1 = 'https://hungryhutt.com/';
 late String imagebaseUrl;
 void getImageBaseUrl() async {
   SharedPreferences.getInstance().then((value) {
@@ -40,7 +40,8 @@ var storeVarientsDeleteUri = Uri.parse('${storebaseUrl}store_varients_delete');
 var storeFeedbackUri = Uri.parse('${storebaseUrl}store_feedback');
 var storeProductRevenueUri = Uri.parse('${storebaseUrl}top_products');
 var storeNotificationUri = Uri.parse('${storebaseUrl}st_notificationlist');
-var storeNotificationDeleteAllUri = Uri.parse('${storebaseUrl}st_delete_all_notification');
+var storeNotificationDeleteAllUri =
+    Uri.parse('${storebaseUrl}st_delete_all_notification');
 var storeCallbackReqUri = Uri.parse('${storebaseUrl}store_callback_req');
 var storeOrderHistoryUri = Uri.parse('${storebaseUrl}store_order_history');
 var cancelOrderUri = Uri.parse('${storebaseUrl}order_rejected');
